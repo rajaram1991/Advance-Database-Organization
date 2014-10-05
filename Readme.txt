@@ -1,9 +1,4 @@
-Advance-Database-Organization
-=============================
-
-Database - Buffer Manager, Storage Manager, Record Manager 
-
-							README - B+Tree.
+										README - B+Tree.
 CONTENTS:
 1.OverView of Design.
 2.OverView of Implementation.
@@ -12,7 +7,7 @@ CONTENTS:
 /***************************************************************************************************
  * OverView of Design
  * *************************************************************************************************/
-B+-tree index is implemented in this Project. The index is backed up by a page file and pages of the index are accessed through the buffer manager. Each node  occupies one page.  A B+-tree stores pointer to records (RID) index by a keys of a given datatype.
+B+-tree index is implemented in this assignment. The index is backed up by a page file and pages of the index are accessed through the buffer manager. Each node  occupies one page.  A B+-tree stores pointer to records (RID) index by a keys of a given datatype.
 
 Index Manager Functions:
 These functions are used to initialize the index manager and shut it down, freeing up all acquired resources.
@@ -161,4 +156,3 @@ These functions are support functions used to handle B+-Tree functions like pin/
 9) distribute(BTreeHandle *tree, PageNumber lpn, PageNumber rpn)
 10) merge(BTreeHandle *tree, PageNumber lpn, PageNumber rpn)
 11) printTreeHelper(BTreeHandle *treeHandle, char *outputBuffer)
-
